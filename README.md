@@ -32,22 +32,21 @@
 
 ### Luís (98898)
 
-* **US5 - Posicionamento aleatório de navios**
-  * *Como* jogador, *quero* usar a opção de colocar navios aleatoriamente *para* iniciar o jogo mais rapidamente.
-  * *Critérios de Aceitação:* Clicar no botão "Random / Shuffle" e verificar que todos os navios são distribuídos na grelha sem sobreposição.
+* **US5 - Ativar ou desativar a música nas definições**
+  * *Como* jogador, *quero* poder ativar ou desativar a música nas definições do jogo *para* personalizar a minha experiência de jogo.
+  * *Critérios de Aceitação:* Aceder às definições, localizar a opção de música ("Music"), desativá-la e verificar que a música deixa de ser reproduzida. Voltar a ativá-la e verificar que a música fica novamente disponível.
 
-* **US6 - Rodar navios durante o posicionamento**
-  * *Como* jogador, *quero* rodar a orientação de um navio (horizontal/vertical) *para* criar a minha estratégia de defesa.
-  * *Critérios de Aceitação:* Clicar ou pressionar tecla para rodar o navio antes de o posicionar e confirmar a alteração das dimensões na grelha.
+* **US6 - Consultar os meus torneios**
+  * *Como* jogador, *quero* consultar os meus torneios (`/en/t/my-tournaments`) *para* acompanhar as competições em que participo ou que organizei.
+  * *Critérios de Aceitação:* Aceder à página `/en/t/my-tournaments` e verificar que é apresentada a secção dos meus torneios e a respetiva informação disponível.
 
-* **US7 - Reiniciar posicionamento da frota**
-  * *Como* jogador, *quero* limpar a grelha de navios *para* recomeçar a minha organização do zero.
-  * *Critérios de Aceitação:* Clicar em "Reset / Clear" e verificar que todos os navios voltam à barra lateral de seleção.
+* **US7 - Consultar a classificação global dos jogadores**
+  * *Como* jogador, *quero* consultar a classificação global ("Global Leaderboards") *para* comparar o meu desempenho com o dos restantes jogadores.
+  * *Critérios de Aceitação:* Aceder à secção "Global Leaderboards" e verificar que é apresentada a tabela de classificação global com os jogadores e as respetivas pontuações.
 
-* **US8 - Confirmar prontidão ("Ready") para iniciar o combate**
-  * *Como* jogador com os navios posicionados, *quero* clicar em "Pronto" *para* avançar para a fase de disparos.
-  * *Critérios de Aceitação:* O botão "Ready" fica ativo apenas quando todos os navios estão no tabuleiro; ao clicar, o estado muda para aguardar o adversário.
-
+* **US8 - Definir tempo ilimitado numa partida contra o Bot**
+  * *Como* jogador, *quero* selecionar a opção de tempo ilimitado numa partida contra o Bot *para* jogar sem limite de tempo para realizar as minhas jogadas.
+  * *Critérios de Aceitação:* Iniciar a configuração de uma partida contra o Bot, selecionar a opção de tempo ilimitado ("Unlimited") e verificar que a partida decorre sem uma contagem decrescente ou limite de tempo por jogada.
 ---
 
 ### Daniel (99201)
