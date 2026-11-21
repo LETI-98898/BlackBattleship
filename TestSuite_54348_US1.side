@@ -1,0 +1,57 @@
+{
+  "id": "9eb3aee0-8cbc-4c74-9056-c27b18f52b22",
+  "version": "2.0",
+  "name": "TestSuite_54348",
+  "url": "https://papergames.io/en/battleship",
+  "tests": [{
+    "id": "0c4cd785-eba0-4d73-982e-ba5392213ace",
+    "name": "UserStoryTest2",
+    "commands": []
+  }, {
+    "id": "9202360c-1f1e-4737-8781-bc3c3b3a0881",
+    "name": "UserStoryTest3",
+    "commands": []
+  }, {
+    "id": "eb69c9f2-80a4-4700-916b-5bbe47efc8b1",
+    "name": "UserStoryTest4",
+    "commands": []
+  }, {
+    "id": "609943c9-e378-4dd0-93dc-38e2236d9aef",
+    "name": "UserStoryTest1",
+    "commands": [{
+      "id": "a158de58-4a7b-4170-8d53-dd1a47e0311c",
+      "comment": "",
+      "command": "open",
+      "target": "https://papergames.io/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ec4ceb8-5fbe-4ab4-9c98-42d4b6e293f5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "920x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18c7a853-ae6e-47f0-92b6-ebe7b63651b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-secondary:nth-child(2)",
+      "targets": [
+        ["css=.btn-secondary:nth-child(2)", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bae9b7fc-7c54-4767-895e-e0f8a649af78",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://papergames.io/en/battleship"],
+  "plugins": []
+}
