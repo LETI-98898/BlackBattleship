@@ -51,23 +51,24 @@
 
 ### Daniel (99201)
 
-* **US9 - Selecionar tipo de munição especial durante a batalha**
-  * *Como* jogador no meu turno de ataque, *quero* selecionar um tipo de munição especial na barra de armas *para* utilizar uma tática de ataque diferente contra a frota adversária.
-  * *Critérios de Aceitação:* Durante a fase de ataque ("Attack your opponent!"), clicar num dos ícones de munição especial disponíveis; o botão da arma selecionada fica destacado visualmente com uma moldura ativa e a mira do jogo reflete o novo tipo de disparo.
+* **US9 - Consultar o registo de alterações e novidades (Changelog)**
+  * *Como* utilizador da plataforma, *quero* aceder à página de Changelog (`/en/changelog`) *para* consultar as notas de lançamento e versões mais recentes dos jogos.
+  * *Critérios de Aceitação:* Na página do Battleship, clicar no link do Changelog, verificar que a página de novidades é carregada com o respetivo URL (`/en/changelog`) e a secção de histórico de versões fica visível.
 
-* **US10 - Consultar o Histórico de Partidas de Battleship**
-  * *Como* jogador, *quero* aceder ao meu histórico de partidas de Battleship (`/en/match-history?gameType=Battleships`) *para* analisar as minhas vitórias e derrotas anteriores.
-  * *Critérios de Aceitação:* Navegar até ao Match History filtrado por Battleships e verificar a listagem de jogos anteriores com resultados e adversários.
+* **US10 - Navegar da página do Battleship para outro jogo (Tic-Tac-Toe)**
+  * *Como* jogador na plataforma, *quero* navegar da página do Battleship para o jogo Tic-Tac-Toe através do menu de navegação *para* alternar entre jogos sem voltar à página inicial.
+  * *Critérios de Aceitação:* Na página `/en/battleship`, clicar no link do jogo Tic-Tac-Toe (`/en/tic-tac-toe`) e verificar que a página do novo jogo é aberta com o URL e título correspondentes.
 
-* **US11 - Enviar uma mensagem rápida ou emoji durante a partida**
-  * *Como* jogador em jogo, *quero* enviar uma mensagem predefinida ou reação no chat *para* comunicar com o adversário.
-  * *Critérios de Aceitação:* Abrir o painel de chat/emojis durante a partida, selecionar um emoji/mensagem e verificar a exibição na caixa de diálogo do jogo.
+* **US11 - Consultar os Termos e Condições da plataforma**
+  * *Como* utilizador da plataforma, *quero* aceder à página de Termos e Condições (`/en/blog/terms-conditions`) a partir do rodapé da página *para* ler as regras de utilização do serviço.
+  * *Critérios de Aceitação:* Na página do Battleship, clicar no link de termos no rodapé e verificar que a página de Termos e Condições é carregada com o respetivo conteúdo visível.
 
-* **US12 - Desistir de uma partida em curso**
-  * *Como* jogador numa situação desfavorável, *quero* ter a opção de render-me/desistir *para* terminar a partida imediatamente.
-  * *Critérios de Aceitação:* Clicar no botão de menu/bandeira branca de desistência, confirmar o aviso de desistência e verificar a transição para o ecrã de derrota com a opção de regressar ao lobby.
+* **US12 - Consultar os planos de subscrição Plus da plataforma**
+  * *Como* jogador, *quero* aceder à página de planos de subscrição (`/en/pricing/plus`) *para* consultar os benefícios e vantagens de ser membro Plus.
+  * *Critérios de Aceitação:* Clicar no link de pricing/subscrição, verificar que a página abre exibindo a tabela com os planos de adesão (mensal/anual) e as suas vantagens.
 
 ---
+
 
 ### Simão (130768)
 
