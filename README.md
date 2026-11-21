@@ -51,9 +51,9 @@
 
 ### Daniel (99201)
 
-* **US9 - Efetuar um disparo na grelha do adversário**
-  * *Como* jogador na minha vez, *quero* clicar numa coordenada da grelha inimiga *para* tentar atingir um navio adversário.
-  * *Critérios de Aceitação:* Clicar numa célula vazia; a célula é marcada com um símbolo de "Água" (Miss) ou "Tiro certeiro" (Hit) e a vez passa para o adversário (ou repete, consoante as regras).
+* **US9 - Selecionar tipo de munição especial durante a batalha**
+  * *Como* jogador no meu turno de ataque, *quero* selecionar um tipo de munição especial na barra de armas *para* utilizar uma tática de ataque diferente contra a frota adversária.
+  * *Critérios de Aceitação:* Durante a fase de ataque ("Attack your opponent!"), clicar num dos ícones de munição especial disponíveis; o botão da arma selecionada fica destacado visualmente com uma moldura ativa e a mira do jogo reflete o novo tipo de disparo.
 
 * **US10 - Consultar o Histórico de Partidas de Battleship**
   * *Como* jogador, *quero* aceder ao meu histórico de partidas de Battleship (`/en/match-history?gameType=Battleships`) *para* analisar as minhas vitórias e derrotas anteriores.
