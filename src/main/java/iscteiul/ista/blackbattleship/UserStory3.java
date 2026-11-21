@@ -11,13 +11,13 @@ public class UserStory3 {
     private final WebDriver driver;
 
     private final By menuButton =
-            By.cssSelector(".cdk-focused > .mat-mdc-button-touch-target");
+            By.xpath("//span/button/span[3]");
 
     private final By creditButton =
             By.cssSelector(".credit");
 
     private final By menuItem =
-            By.cssSelector(".cdk-focused > .mat-mdc-menu-item-text > span");
+            By.xpath("//div[@id='mat-menu-panel-serverApp0']/div/a/span/span");
 
     private final By inputField =
             By.id("mat-input-serverApp0");
