@@ -1,0 +1,191 @@
+{
+  "id": "e6f8b91a-7b3c-4d5e-9920-1a2b3c4d5e6f",
+  "version": "2.0",
+  "name": "TestSuite_99201",
+  "url": "https://papergames.io",
+  "tests": [
+    {
+      "id": "a1b2c3d4-e5f6-4a5b-8c9d-012345678909",
+      "name": "UserStoryTest9",
+      "commands": [
+        {
+          "id": "c1a1-01",
+          "comment": "Abrir página principal do Battleship",
+          "command": "open",
+          "target": "/en/battleship",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c1a1-02",
+          "comment": "Definir resolução da janela",
+          "command": "setWindowSize",
+          "target": "1280x800",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c1a1-03",
+          "comment": "Clicar no link de Changelog",
+          "command": "click",
+          "target": "xpath=//a[contains(@href,'/changelog')]",
+          "targets": [
+            ["xpath=//a[contains(@href,'/changelog')]", "xpath:href"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c1a1-04",
+          "comment": "Verificar se a página de changelog é carregada",
+          "command": "assert",
+          "target": "url",
+          "targets": [],
+          "value": "*changelog*"
+        }
+      ]
+    },
+    {
+      "id": "a1b2c3d4-e5f6-4a5b-8c9d-012345678910",
+      "name": "UserStoryTest10",
+      "commands": [
+        {
+          "id": "c2a2-01",
+          "comment": "Abrir página principal do Battleship",
+          "command": "open",
+          "target": "/en/battleship",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c2a2-02",
+          "comment": "Definir resolução da janela",
+          "command": "setWindowSize",
+          "target": "1280x800",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c2a2-03",
+          "comment": "Clicar no link de navegação para Tic-Tac-Toe",
+          "command": "click",
+          "target": "xpath=//a[contains(@href,'/tic-tac-toe')]",
+          "targets": [
+            ["xpath=//a[contains(@href,'/tic-tac-toe')]", "xpath:href"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c2a2-04",
+          "comment": "Verificar se o URL reflete o novo jogo",
+          "command": "assert",
+          "target": "url",
+          "targets": [],
+          "value": "*tic-tac-toe*"
+        }
+      ]
+    },
+    {
+      "id": "a1b2c3d4-e5f6-4a5b-8c9d-012345678911",
+      "name": "UserStoryTest11",
+      "commands": [
+        {
+          "id": "c3a3-01",
+          "comment": "Abrir página principal do Battleship",
+          "command": "open",
+          "target": "/en/battleship",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c3a3-02",
+          "comment": "Definir resolução da janela",
+          "command": "setWindowSize",
+          "target": "1280x800",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c3a3-03",
+          "comment": "Clicar no link de Termos e Condições",
+          "command": "click",
+          "target": "xpath=//a[contains(@href,'terms-conditions')]",
+          "targets": [
+            ["xpath=//a[contains(@href,'terms-conditions')]", "xpath:href"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c3a3-04",
+          "comment": "Verificar se a página de termos é exibida",
+          "command": "assertElementPresent",
+          "target": "css=h1, main",
+          "targets": [
+            ["css=main", "css:finder"]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "a1b2c3d4-e5f6-4a5b-8c9d-012345678912",
+      "name": "UserStoryTest12",
+      "commands": [
+        {
+          "id": "c4a4-01",
+          "comment": "Abrir página principal do Battleship",
+          "command": "open",
+          "target": "/en/battleship",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c4a4-02",
+          "comment": "Definir resolução da janela",
+          "command": "setWindowSize",
+          "target": "1280x800",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c4a4-03",
+          "comment": "Clicar no link de planos de subscrição Plus",
+          "command": "click",
+          "target": "xpath=//a[contains(@href,'pricing/plus')]",
+          "targets": [
+            ["xpath=//a[contains(@href,'pricing/plus')]", "xpath:href"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c4a4-04",
+          "comment": "Verificar se a página de planos de subscrição é carregada",
+          "command": "assertElementPresent",
+          "target": "css=.container, main",
+          "targets": [
+            ["css=main", "css:finder"]
+          ],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "suite-99201",
+      "name": "TestSuite_99201",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "a1b2c3d4-e5f6-4a5b-8c9d-012345678909",
+        "a1b2c3d4-e5f6-4a5b-8c9d-012345678910",
+        "a1b2c3d4-e5f6-4a5b-8c9d-012345678911",
+        "a1b2c3d4-e5f6-4a5b-8c9d-012345678912"
+      ]
+    }
+  ],
+  "urls": [
+    "https://papergames.io"
+  ],
+  "plugins": []
+}
