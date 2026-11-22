@@ -9,23 +9,23 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-public class UserStory2Test {
+public class UserStory8Test {
 
     private WebDriver driver;
-    private UserStory2 userStory2;
+    private UserStory8 userStory4;
 
     @BeforeEach
     void setUp() {
         driver = new ChromeDriver();
-        driver.manage().window().setSize(new Dimension(920, 692));
+        driver.manage().window().setSize(new Dimension(571, 692));
 
-        userStory2 = new UserStory2(driver);
+        userStory4 = new UserStory8(driver);
     }
 
     @Test
-    void testUserStory2() {
-        userStory2.openPage();
-        userStory2.clickButton();
+    void testUserStory4() {
+        userStory4.openPage();
+        userStory4.clickCreatePrivateRoom();
 
         assertNotNull(driver.getCurrentUrl());
     }

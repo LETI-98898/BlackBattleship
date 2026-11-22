@@ -15,10 +15,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * Utiliza a classe UserStory1 para interagir
  * com a aplicação, seguindo o padrão POM.
  */
-public class UserStory1Test {
+public class UserStory5Test {
 
     private WebDriver driver;
-    private UserStory1 page;
+    private UserStory5 page;
 
     /**
      * Inicializa o navegador e prepara a página
@@ -29,7 +29,7 @@ public class UserStory1Test {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        page = new UserStory1(driver);
+        page = new UserStory5(driver);
     }
 
     /**

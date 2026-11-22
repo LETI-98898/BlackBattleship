@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 /**
  * Page Object para a User Story 3.
  */
-public class UserStory3 {
+public class UserStory7 {
 
     private final WebDriver driver;
 
@@ -25,7 +25,7 @@ public class UserStory3 {
     private final By updateButton =
             By.cssSelector(".btn-secondary");
 
-    public UserStory3(WebDriver driver) {
+    public UserStory7(WebDriver driver) {
         this.driver = driver;
     }
 

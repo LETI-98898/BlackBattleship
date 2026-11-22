@@ -14,10 +14,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * Testa a funcionalidade associada à ligação See all,
  * utilizando a Page Object Class UserStory3.
  */
-public class UserStory3Test {
+public class UserStory7Test {
 
     private WebDriver driver;
-    private UserStory3 page;
+    private UserStory7 page;
 
     /**
      * Inicializa o navegador antes de cada teste.
@@ -27,7 +27,7 @@ public class UserStory3Test {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        page = new UserStory3(driver);
+        page = new UserStory7(driver);
     }
 
     /**

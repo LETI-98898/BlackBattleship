@@ -14,10 +14,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * Executa o cenário de acesso à opção
  * My tournaments utilizando a classe UserStory2.
  */
-public class UserStory2Test {
+public class UserStory6Test {
 
     private WebDriver driver;
-    private UserStory2 page;
+    private UserStory6 page;
 
     /**
      * Inicializa o navegador antes de cada teste.
@@ -27,7 +27,7 @@ public class UserStory2Test {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        page = new UserStory2(driver);
+        page = new UserStory6(driver);
     }
 
     /**
