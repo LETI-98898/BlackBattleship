@@ -6,14 +6,14 @@ import org.openqa.selenium.WebDriver;
 /**
  * Page Object para a User Story 4.
  */
-public class UserStory4 {
+public class UserStory8 {
 
     private final WebDriver driver;
 
     private final By createPrivateRoomButton =
             By.cssSelector(".w-100:nth-child(1) > .btn-lg .flex-grow-1");
 
-    public UserStory4(WebDriver driver) {
+    public UserStory8(WebDriver driver) {
         this.driver = driver;
     }
 

@@ -14,7 +14,7 @@ import java.time.Duration;
  * Encapsula os localizadores e as interações com
  * os elementos da interface.
  */
-public class UserStory1 {
+public class UserStory5 {
 
     private final WebDriver driver;
     private final WebDriverWait wait;
@@ -49,7 +49,7 @@ public class UserStory1 {
      *
      * @param driver instância do Selenium WebDriver
      */
-    public UserStory1(WebDriver driver) {
+    public UserStory5(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(
                 driver, Duration.ofSeconds(10)

@@ -13,7 +13,7 @@ import java.time.Duration;
  * Encapsula os localizadores e as operações
  * necessárias para aceder à secção My tournaments.
  */
-public class UserStory2 {
+public class UserStory6 {
 
     private final WebDriver driver;
     private final WebDriverWait wait;
@@ -34,7 +34,7 @@ public class UserStory2 {
      *
      * @param driver instância do Selenium WebDriver
      */
-    public UserStory2(WebDriver driver) {
+    public UserStory6(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(
                 driver, Duration.ofSeconds(10)

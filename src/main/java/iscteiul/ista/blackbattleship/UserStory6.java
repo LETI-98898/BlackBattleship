@@ -6,14 +6,14 @@ import org.openqa.selenium.WebDriver;
 /**
  * Page Object para a User Story 2.
  */
-public class UserStory2 {
+public class UserStory6 {
 
     private final WebDriver driver;
 
     private final By buttonLocator =
             By.cssSelector(".w-100:nth-child(2) > .btn .flex-grow-1");
 
-    public UserStory2(WebDriver driver) {
+    public UserStory6(WebDriver driver) {
         this.driver = driver;
     }
 

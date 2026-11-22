@@ -13,7 +13,7 @@ import java.time.Duration;
  * Encapsula as operações necessárias para
  * aceder à ligação See all.
  */
-public class UserStory3 {
+public class UserStory7 {
 
     private final WebDriver driver;
     private final WebDriverWait wait;
@@ -30,7 +30,7 @@ public class UserStory3 {
      *
      * @param driver instância do Selenium WebDriver
      */
-    public UserStory3(WebDriver driver) {
+    public UserStory7(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(
                 driver, Duration.ofSeconds(10)

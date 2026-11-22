@@ -14,10 +14,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * Testa a configuração do tempo ilimitado
  * e a gravação das definições do jogo.
  */
-public class UserStory4Test {
+public class UserStory8Test {
 
     private WebDriver driver;
-    private UserStory4 page;
+    private UserStory8 page;
 
     /**
      * Inicializa o navegador antes de cada teste.
@@ -27,7 +27,7 @@ public class UserStory4Test {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        page = new UserStory4(driver);
+        page = new UserStory8(driver);
     }
 
     /**

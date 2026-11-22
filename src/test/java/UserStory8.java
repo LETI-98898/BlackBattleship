@@ -12,7 +12,7 @@ import java.time.Duration;
  * Encapsula as operações necessárias para configurar
  * o tempo ilimitado de jogo e guardar as definições.
  */
-public class UserStory4 {
+public class UserStory8 {
 
     private final WebDriver driver;
     private final WebDriverWait wait;
@@ -41,7 +41,7 @@ public class UserStory4 {
      *
      * @param driver instância do Selenium WebDriver
      */
-    public UserStory4(WebDriver driver) {
+    public UserStory8(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(
                 driver, Duration.ofSeconds(10)
