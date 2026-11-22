@@ -1,0 +1,684 @@
+{
+  "id": "2a866ebc-18b4-478f-8833-0fb3c4f17d2f",
+  "version": "2.0",
+  "name": "TestSuite_130768",
+  "url": "https://papergames.io/en/battleship",
+  "tests": [
+    {
+      "id": "b4e1eace-253b-453f-8889-b27c3c85d575",
+      "name": "UserStoryTest13",
+      "commands": [
+        {
+          "id": "dcd28542-08ba-4a7d-83ab-46098f07d759",
+          "comment": "Abre a página do Battleship",
+          "command": "open",
+          "target": "https://papergames.io/en/battleship",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6f6c2993-34f4-4d14-941f-10563c588543",
+          "comment": "Define o tamanho da janela do browser",
+          "command": "setWindowSize",
+          "target": "1920x1050",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "868ef695-bf92-469c-b105-ca782b8177f6",
+          "comment": "Recusa os cookies não essenciais (Do not consent)",
+          "command": "click",
+          "target": "css=.fc-cta-do-not-consent > .fc-button-label",
+          "targets": [
+            [
+              "css=.fc-cta-do-not-consent > .fc-button-label",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[2]/p",
+              "xpath:position"
+            ],
+            [
+              "xpath=//p[contains(.,'Do not consent')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8896dea4-9659-492c-bcbb-cd24dc44010d",
+          "comment": "Clica em Create tournament para abrir o formulário de criação de torneio",
+          "command": "click",
+          "target": "css=.position-relative > .front",
+          "targets": [
+            [
+              "css=.position-relative > .front",
+              "css:finder"
+            ],
+            [
+              "xpath=//a/span[2]",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9d78a299-6a7c-44c1-8528-ce125d958daf",
+          "comment": "Seleciona o campo Tournament name",
+          "command": "click",
+          "target": "id=tf-name",
+          "targets": [
+            [
+              "id=tf-name",
+              "id"
+            ],
+            [
+              "css=#tf-name",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='tf-name']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "bc52253e-45b7-42b8-bbc3-8935a79d0335",
+          "comment": "Escreve o nome do torneio",
+          "command": "type",
+          "target": "id=tf-name",
+          "targets": [
+            [
+              "id=tf-name",
+              "id"
+            ],
+            [
+              "css=#tf-name",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='tf-name']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Torneio ES 130768"
+        },
+        {
+          "id": "64d4f368-c187-40cb-a408-d4a5943c538b",
+          "comment": "Seleciona o modo Leaderboard",
+          "command": "click",
+          "target": "xpath=//span[contains(.,'Leaderboard')]",
+          "targets": [
+            [
+              "css=.choice--selected > .choice__label:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//section[4]/app-choice-group/div/label/span",
+              "xpath:position"
+            ],
+            [
+              "xpath=//span[contains(.,'Leaderboard')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "fa6434b9-2c39-4414-9169-6651381ef2cc",
+          "comment": "Verifica que a pré-visualização mostra o jogo e o modo (BATTLESHIP · LEADERBOARD)",
+          "command": "assertText",
+          "target": "css=.tb__eyebrow > span",
+          "targets": [
+            [
+              "css=.tb__eyebrow > span",
+              "css:finder"
+            ],
+            [
+              "xpath=//app-tournament-banner/div/div/div/div/span",
+              "xpath:position"
+            ]
+          ],
+          "value": "BATTLESHIP · LEADERBOARD"
+        },
+        {
+          "id": "4f6cea72-78ee-401d-9de8-991435e18018",
+          "comment": "Clica em Create and share",
+          "command": "click",
+          "target": "css=.btn-secondary",
+          "targets": [
+            [
+              "css=.btn-secondary",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@type='button'])[8]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//aside/div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Create and share')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "63db11c0-bcc9-4cd0-912e-25f2759d7e3e",
+          "comment": "Verifica que é pedido login para criar o torneio (Continue with email)",
+          "command": "assertText",
+          "target": "css=.w-100:nth-child(1)",
+          "targets": [
+            [
+              "css=.w-100:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-sign-up-dialog/app-dialog-layout/div/section/div/div/app-sign-up/div/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//app-sign-up/div/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Continue with email')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Continue with email"
+        },
+        {
+          "id": "7961edbb-a0bd-4e90-b201-b56015ddb687",
+          "comment": "Fecha a janela de login",
+          "command": "click",
+          "target": "xpath=//div/button/span[3]",
+          "targets": [
+            [
+              "css=.cdk-focused > .mat-mdc-button-touch-target",
+              "css:finder"
+            ],
+            [
+              "xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-sign-up-dialog/app-dialog-layout/div/header/div/button/span[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//div/button/span[3]",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "81235240-2187-4f9b-a655-63f837addee4",
+      "name": "UserStoryTest14",
+      "commands": [
+        {
+          "id": "18b3250c-6713-49af-8e00-092a0d118614",
+          "comment": "Abre a página do Battleship",
+          "command": "open",
+          "target": "https://papergames.io/en/battleship",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6b8460a4-3a0f-4ccc-8510-18c489d9a057",
+          "comment": "Define o tamanho da janela do browser",
+          "command": "setWindowSize",
+          "target": "1710x1037",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4a7fd7c7-79ab-40ea-b1e4-a760b7afae76",
+          "comment": "Recusa os cookies não essenciais (Do not consent)",
+          "command": "click",
+          "target": "css=.fc-cta-do-not-consent > .fc-button-label",
+          "targets": [
+            [
+              "css=.fc-cta-do-not-consent > .fc-button-label",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[2]/p",
+              "xpath:position"
+            ],
+            [
+              "xpath=//p[contains(.,'Do not consent')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "b0907d3c-c281-4069-bfbe-9698ecde838e",
+          "comment": "Clica em Play vs robot",
+          "command": "click",
+          "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+          "targets": [
+            [
+              "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+              "css:finder"
+            ],
+            [
+              "xpath=//app-juicy-button[2]/button/span[2]/span",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4596f62a-b99b-448b-afe1-0b89d744417a",
+          "comment": "Escreve o nickname do jogador convidado",
+          "command": "type",
+          "target": "css=.input-xl",
+          "targets": [
+            [
+              "css=.input-xl",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@type='text']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section/div/div/div/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Simao130768"
+        },
+        {
+          "id": "b157ecb5-d24c-49a2-8da7-e0684332f6d7",
+          "comment": "Confirma o nickname (Continue)",
+          "command": "click",
+          "target": "css=.p-3 > .btn",
+          "targets": [
+            [
+              "css=.p-3 > .btn",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@type='submit']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/footer/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//footer/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Continue')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "5d188336-68f0-44db-b56b-f2026abf23e3",
+          "comment": "Clica em Abort game para sair da partida",
+          "command": "click",
+          "target": "xpath=//button[contains(.,'Abort game')]",
+          "targets": [
+            [
+              "css=.btn",
+              "css:finder"
+            ],
+            [
+              "xpath=//span/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Abort game')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6ef63ec7-5010-4755-a21e-a14efff0381c",
+          "comment": "Confirma que quer abandonar a partida",
+          "command": "click",
+          "target": "css=.btn-danger",
+          "targets": [
+            [
+              "css=.btn-danger",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@type='button'])[4]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp1']/div/div/app-confirm-leave-dialog/app-dialog-layout/div/footer/button[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//footer/button[2]",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d3a0e290-cf6e-4ea1-b4c3-9d121c8cd7bc",
+          "comment": "Abre a página de amigos (Friends) na barra lateral",
+          "command": "click",
+          "target": "xpath=//span[contains(.,'Friends')]",
+          "targets": [
+            [
+              "css=.cdk-focused > .hide-if-collapsed",
+              "css:finder"
+            ],
+            [
+              "xpath=//li[2]/a/span",
+              "xpath:position"
+            ],
+            [
+              "xpath=//span[contains(.,'Friends')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "50819ea2-1608-4f27-996e-e13de2adde0a",
+          "comment": "Verifica que não há convites pendentes (No pending invitations)",
+          "command": "assertText",
+          "target": "css=app-friend-invitations > .ng-star-inserted",
+          "targets": [
+            [
+              "css=app-friend-invitations > .ng-star-inserted",
+              "css:finder"
+            ],
+            [
+              "xpath=//app-friend-invitations/span",
+              "xpath:position"
+            ],
+            [
+              "xpath=//span[contains(.,'No pending invitations.')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "No pending invitations."
+        },
+        {
+          "id": "4a07b0ee-8c30-4e92-bfcf-e18b9a4a22f8",
+          "comment": "Verifica que é apresentada a lista de amigos (Friends)",
+          "command": "assertText",
+          "target": "css=.mb-0",
+          "targets": [
+            [
+              "css=.mb-0",
+              "css:finder"
+            ],
+            [
+              "xpath=//h1",
+              "xpath:position"
+            ],
+            [
+              "xpath=//h1[contains(.,'Friends')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Friends"
+        }
+      ]
+    },
+    {
+      "id": "8a6752eb-ddf9-4a07-87de-0081dfadf69c",
+      "name": "UserStoryTest15",
+      "commands": [
+        {
+          "id": "e9cbfdaf-bf1e-459e-8071-f68e28cab3a7",
+          "comment": "Abre a página do Battleship",
+          "command": "open",
+          "target": "https://papergames.io/en/battleship",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "acb28f44-31c9-4959-8cd9-f75751db201c",
+          "comment": "Define o tamanho da janela do browser",
+          "command": "setWindowSize",
+          "target": "1710x1037",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0df41f4d-57f2-4634-ab49-4e44077b734f",
+          "comment": "Recusa os cookies não essenciais (Do not consent)",
+          "command": "click",
+          "target": "css=.fc-cta-do-not-consent > .fc-button-label",
+          "targets": [
+            [
+              "css=.fc-cta-do-not-consent > .fc-button-label",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[2]/p",
+              "xpath:position"
+            ],
+            [
+              "xpath=//p[contains(.,'Do not consent')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8f609a39-5e1b-4ce8-b6fd-b13bd614dd84",
+          "comment": "Abre a loja (Shop) na barra lateral",
+          "command": "click",
+          "target": "linkText=Shop",
+          "targets": [
+            [
+              "linkText=Shop",
+              "linkText"
+            ],
+            [
+              "css=.cdk-focused",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(@href, '/en/shop')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[2]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Shop')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "dcccac2b-3526-47a1-aa1d-f3484c11c8a9",
+          "comment": "Abre a secção de avatares (Monsters)",
+          "command": "click",
+          "target": "css=.box-shadow-1:nth-child(2) .w-75",
+          "targets": [
+            [
+              "css=.box-shadow-1:nth-child(2) .w-75",
+              "css:finder"
+            ],
+            [
+              "xpath=//img[@alt='Monsters']",
+              "xpath:img"
+            ],
+            [
+              "xpath=//div[2]/a/div/img",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "fc7dd26f-2e27-4bc0-a7a0-d9bce2155295",
+          "comment": "Verifica que o avatar Mr. Happy é apresentado",
+          "command": "assertText",
+          "target": "css=.h-100:nth-child(1) > .h-100 > .funky",
+          "targets": [
+            [
+              "css=.h-100:nth-child(1) > .h-100 > .funky",
+              "css:finder"
+            ],
+            [
+              "xpath=//mat-tab-body[@id='mat-tab-group-serverApp0-content-0']/div/div/app-avatar-product/div/div[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//app-avatar-product/div/div[2]",
+              "xpath:position"
+            ]
+          ],
+          "value": "Mr. Happy"
+        },
+        {
+          "id": "0a391f67-a5bb-4205-b450-f255e66d1236",
+          "comment": "Verifica que o preço do avatar Mr. Happy é 990",
+          "command": "assertText",
+          "target": "css=.h-100:nth-child(1) > .h-100 > app-shop-purchase-product-button > .btn",
+          "targets": [
+            [
+              "css=.h-100:nth-child(1) > .h-100 > app-shop-purchase-product-button > .btn",
+              "css:finder"
+            ],
+            [
+              "xpath=//mat-tab-body[@id='mat-tab-group-serverApp0-content-0']/div/div/app-avatar-product/div/app-shop-purchase-product-button/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//app-shop-purchase-product-button/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,' 990')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "990"
+        }
+      ]
+    },
+    {
+      "id": "3ad29249-b7c8-4c29-bbb8-d4e74f79ede3",
+      "name": "UserStoryTest16",
+      "commands": [
+        {
+          "id": "5204fccd-2984-481b-9f3a-18dac3dbad64",
+          "comment": "Abre a página do Battleship",
+          "command": "open",
+          "target": "https://papergames.io/en/battleship",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2cb3a8d0-97fd-441e-9bad-bcce579f1e45",
+          "comment": "Define o tamanho da janela do browser",
+          "command": "setWindowSize",
+          "target": "550x693",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c69413cf-996a-4c65-bfca-abb8ad10b5c2",
+          "comment": "Recusa os cookies não essenciais (Do not consent)",
+          "command": "click",
+          "target": "css=.fc-cta-do-not-consent > .fc-button-label",
+          "targets": [
+            [
+              "css=.fc-cta-do-not-consent > .fc-button-label",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[2]/p",
+              "xpath:position"
+            ],
+            [
+              "xpath=//p[contains(.,'Do not consent')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f2f5932a-3c09-4710-a40a-25738591b774",
+          "comment": "Verifica que é apresentada a secção Rules of Battleship game online",
+          "command": "assertText",
+          "target": "css=.col-12 > div > h2:nth-child(2)",
+          "targets": [
+            [
+              "css=.col-12 > div > h2:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//h2",
+              "xpath:position"
+            ],
+            [
+              "xpath=//h2[contains(.,'Rules of Battleship game online')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Rules of Battleship game online"
+        },
+        {
+          "id": "9376a911-7e0d-40b3-8c8f-e75923f4177a",
+          "comment": "Verifica que é apresentado o texto das regras do jogo",
+          "command": "assertText",
+          "target": "css=div:nth-child(1) > p:nth-child(3)",
+          "targets": [
+            [
+              "css=div:nth-child(1) > p:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//p[2]",
+              "xpath:position"
+            ]
+          ],
+          "value": "Battleship is a turn-based 2-player game. Each player has a 10x10 grid with a fleet of five ships, of 5, 4, 3, 3 and 2 squares, placed at random at the start of the game. The players take turns firing at the opponent's grid and try to sink the enemy fleet. Hits are shown with fire and misses with a water splash. When a player hits an opponent's ship, they can fire again. The player who sinks the whole of their opponent's fleet wins the game."
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "1c018f93-68fc-4837-b2ee-79c2ad88ef6e",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": []
+    }
+  ],
+  "urls": [
+    "https://papergames.io/en/battleship"
+  ],
+  "plugins": []
+}
